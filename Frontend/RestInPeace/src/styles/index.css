@@ -1,0 +1,26 @@
+/* index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* For user pages (below user navbar if it's fixed) */
+.user-content {
+  margin-left: 220px; /* If user navbar is a fixed sidebar, else remove */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* For admin pages (below admin navbar) */
+.admin-content {
+  margin-top: 70px; /* offset for fixed admin navbar */
+  padding: 20px;
+  min-height: 100vh;
+  background: #f5e6cc; /* Light sandal background */
+  color: #4d3c2c;
+  box-sizing: border-box;
+}

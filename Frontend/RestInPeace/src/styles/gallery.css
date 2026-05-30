@@ -1,0 +1,34 @@
+.gallery-container {
+    margin-left: 250px; /* For sidebar */
+    padding: 20px;
+    background-color: #090909;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .gallery-container h1 {
+    color: #5c3d2e;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item img {
+    width: 90%;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 10px;
+    border: 3px solid #8b5e3c;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+    border-color: #d35400;
+  }
+  

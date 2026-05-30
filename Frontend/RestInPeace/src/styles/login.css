@@ -1,0 +1,36 @@
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkorange;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

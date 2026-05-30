@@ -1,0 +1,215 @@
+/* Home.css */
+.home-page {
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+/* Video Background Section */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  padding-left: 170px;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.cafe-title {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.cafe-title h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 2s ease;
+}
+
+.title-divider {
+  width: 200px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  animation: expand 1.5s ease;
+}
+
+/* Specials Section */
+.specials-section {
+  padding: 60px 20px;
+  padding-left: 230px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.specials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: orange;
+}
+
+.specials-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+  position: relative;
+}
+
+.special-item {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: scale(0.9);
+}
+
+.special-item.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.special-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.special-info {
+  margin-top: 20px;
+}
+
+.special-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left:240px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.owner-signature {
+  margin-top: 40px;
+}
+
+.owner-signature img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.owner-signature span {
+  display: block;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes expand {
+  from { width: 0; }
+  to { width: 200px; }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cafe-title h1 {
+    font-size: 3.5rem;
+  }
+  
+  .specials-slider {
+    height: 350px;
+  }
+  
+  .special-item {
+    width: 250px;
+  }
+  
+  .special-item img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cafe-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .specials-section,
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .specials-slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cafe-title h1 {
+    font-size: 2rem;
+  }
+  
+  .title-divider {
+    width: 150px;
+  }
+  
+  .special-item {
+    width: 220px;
+  }
+  
+  .special-item img {
+    height: 220px;
+  }
+}
